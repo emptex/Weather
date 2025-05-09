@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Novecento';
+    src: url('Novecento\_sans\_wide\_Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Novecento', sans-serif;
+    background: linear-gradient(to bottom, #f9f5f0, #e6e2dc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .container {
+    background: white;
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    border: 1px solid #d8cfc3;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #002fa7;
+  }
+  input {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 0.8rem;
+    box-sizing: border-box;
+  }
+  button {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+    background: #002fa7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  button:hover {
+    background: #003cd1;
+  }
+  #result {
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+  .hidden { display: none; }
+  .scroll {
+    background: #f0f6ff;
+    padding: 1rem;
+    border: 1px solid #c9dbf4;
+    border-radius: 6px;
+    position: relative;
+    animation: unroll 0.6s ease-out;
+    margin-bottom: 0.8rem;
+    color: #002855;
+    line-height: 1.5;
+  }
+  @keyframes unroll {
+    from { transform: scaleY(0); transform-origin: top; }
+    to   { transform: scaleY(1); transform-origin: top; }
+  }
