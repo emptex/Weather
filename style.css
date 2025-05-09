@@ -1,13 +1,14 @@
 @font-face {
     font-family: 'Novecento';
-    src: url('Novecento\_sans\_wide\_Medium.ttf') format('truetype');
+    src: url('Novecento_sans_wide_Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
   
   body {
     font-family: 'Novecento', sans-serif;
-    background: linear-gradient(to bottom, #f9f5f0, #e6e2dc);
+    background: url('1.jpg') no-repeat center center fixed;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +16,7 @@
     margin: 0;
   }
   .container {
-    background: white;
+    background: rgba(255, 255, 255, 0.9);
     padding: 2rem 2.5rem;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -72,3 +73,4 @@
     from { transform: scaleY(0); transform-origin: top; }
     to   { transform: scaleY(1); transform-origin: top; }
   }
+  
